@@ -1,0 +1,12 @@
+services:
+  sqlite-db:
+    build: .
+    container_name: database-exercise
+    volumes:
+      # dbファイルをマウント
+      - ./repo2/repo2.sqlite3:/workspace/repo2.sqlite3
+      # ホストのファイルをコンテナ内で参照可能にする
+      - ./repo2:/workspace/repo2
+    stdin_open: true
+    tty: true
+    command: sqlite3 /workspace/repo2.sqlite3 
