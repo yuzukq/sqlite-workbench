@@ -9,7 +9,7 @@ SELECT * FROM 競技場表;
 SELECT * FROM チーム表;
 ```
 
-# Usege
+# Usage
 ## 1. これをクローン
 ```bash
 git clone https://github.com/yuzukq/sqlite-workbench.git
